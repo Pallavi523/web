@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <style>
+        body {
+            background-color: lavenderblush;
+            background-size:cover;
+        }
+        fieldset{
+            border-radius: 10px;
+            border-color:blue;
+        }
+        
+        h1{
+            margin: 8px 4px 20px 52px;
+            color:azure;
+        }
+        .submit {margin: 4px 4px 4px 24px;
+            width: 200px;
+            padding: 5px;
+            font-size: 16px;
+            border-radius: 3px;
+            background-color:rgba(250,100,0,0.8);
+            color: #fff;
+            border: 1px solid rgba(76, 73, 220, 0.3);
+            box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+        }
+        .name{
+            width: 200px;
+            border: 2px solid #ddd;
+            border-radius: 3px;
+            padding: 4px;
+            outline: 0;
+            background-attachment: #fff;
+            box-shadow:inset 1px 1px 5px rgba(100,0,0,0,8);
+        }
+    </style>
+</head>
+<body align="center">
+    <form action="https://enw7u145b8im9.x.pipedream.net/" method="post">
+        <h1 align="center" style="color: blue;">SURVEY FORM</h1>
+
+        <div>
+            <label>Name- </label>
+            <input type="text" name="first name" class="name" required placeholder="first name" >  <input type="text" name="last name" class="name" placeholder="last name" required >
+        </div>
+        <br>
+        <div>
+            <label>Address-</label>
+            <input type="text" name="street" class="name" required placeholder="street">
+            <input type="text" name="city" class="name" required placeholder="city"><br><br>
+            <input type="text" name="state" class="name" required placeholder="state">
+            <input type="number" name="pin code"  class="name" required placeholder="pincode">
+        </div>    
+        <br>
+        <div>
+            <label >Contact Number-</label>
+            <input type="number" name="number" class="name"
+            pattern="[0-9]{10}" title="please enter correct number" required>
+        </div><br><br>
+        <fieldset>
+            <legend> Rating </legend>
+                 <div>
+                     <label>Quality Of Product:  </label>
+                     excellent<input type="radio" name="qrating" id="excel" > good<input type="radio" name="qrating" id="good" > bad<input type="radio" name="qrating" id="bad"> <br><br>
+                     <label>Value For Money:  </label>
+                     excellent<input type="radio" name="vrating" id="excel"> good<input type="radio" name="vrating" id="good"> bad<input type="radio" name="vrating" id="bad"><br><br>
+                     <label>Delivery:  </label>
+                     excellent<input type="radio" name="drating" id="excel"> good<input type="radio" name="drating" id="good"> bad<input type="radio" name="drating" id="bad"><br><br>
+                </div>
+        <br><br>
+        <div>
+            <input type="submit" value="SUBMIT" id="submit" class="submit">
+        </div>
+        </fieldset> 
+
+    </form>
+</body>
+</html>
