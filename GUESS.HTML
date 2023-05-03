@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+          
+        body {
+            width: 50%;
+            max-width: 800px;
+            min-width: 480px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guess The Number Game</h1>
+    <div class="form">
+    <button type="button" class="submitguess" id="submitguess">START GAME</button>
+    </div>
+    <script type = "text/javascript">
+
+    // random value generated
+      var y = Math.floor(Math.random() * 100 + 1);
+  
+      // counting the number of guesses
+      // made for correct Guess
+      var guess = 5;
+  
+      document.getElementById("submitguess").onclick = function(){
+          var n=prompt('Enter your number:','');
+        // number guessed by user    
+        if ((x >1) && (x < 100)){
+            if(n==y)
+             {    
+             alert("COMPUTER WINS");
+             }
+        
+            else if(n!=y) 
+            {    
+             alert("YOU WINS");
+            }
+        }
+        else
+        {
+        alert("PLEASE ENTER CORRECT NUMBER");
+        } 
+      }
+      </Script>
+</body>
+</html>
